@@ -56,6 +56,7 @@ jobs:
           python3 scripts/get_env.py "--event_file=${{ github.event_path }}" "--type=$TYPE"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       - name: install-doxygen
         uses: AdarshRawat1/Install-Doxygen@v1.0
 =======
@@ -66,6 +67,10 @@ jobs:
           DOXY_CONFIG_DIR: "${{ github.workspace }}/documentation/doxygen"
           DOXY_OUTPUT_DIR: "${{ github.workspace }}/documentation/doxygen/build"
 >>>>>>> 7db35508 (u2f: Fix leaking message digest contexts (#4052))
+=======
+      - name: install-doxygen
+        uses: AdarshRawat1/Install-Doxygen@v1.0
+>>>>>>> b7f2a9ed (Github: update doxygen workflow to use exact version (#4065))
         with:
           version: "1.12.0"
 

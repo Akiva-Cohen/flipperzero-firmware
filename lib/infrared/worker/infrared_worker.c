@@ -605,12 +605,16 @@ void infrared_worker_tx_stop(InfraredWorker* instance) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 17940a2c (made new method changes)
     notification_message(instance->notification, &sequence_blink_stop);
 =======
     if(instance->tx_blink_enable) {
         notification_message(instance->notification, &message_blink_stop);
     }
 >>>>>>> 2e59eb13 (made new method changes)
+<<<<<<< HEAD
 =======
     notification_message(instance->notification, &sequence_blink_stop);
 >>>>>>> c9fcee34 (working)
@@ -622,6 +626,8 @@ void infrared_worker_tx_stop(InfraredWorker* instance) {
 =======
     notification_message(instance->notification, &sequence_blink_stop);
 >>>>>>> 0992febe (working)
+=======
+>>>>>>> 17940a2c (made new method changes)
 
     instance->signal.timings_cnt = 0;
     furi_check(furi_stream_buffer_reset(instance->stream) == FuriStatusOk);

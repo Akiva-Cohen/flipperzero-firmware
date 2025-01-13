@@ -392,7 +392,7 @@ void infrared_tx_start(InfraredApp* infrared) {
 
     infrared_worker_tx_enable_blink_on_sending(infrared->worker, true);
 
-    infrared_worker_tx_ infrared_worker_tx_set_get_signal_callback(
+    infrared_worker_tx_set_get_signal_callback(
         infrared->worker, infrared_worker_tx_get_signal_steady_callback, infrared);
     infrared_worker_tx_start(infrared->worker);
 
